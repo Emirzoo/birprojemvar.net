@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Başlat - birprojemvar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar (same as other pages) -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-indigo-600">birprojemvar</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="projects.html" class="text-gray-600 hover:text-indigo-600">Keşfet</a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600">Projeler</a>
+                    <a href="create-project.html" class="text-indigo-600">Başlat</a>
+                    <a href="login.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Giriş Yap</a>
+                    <a href="register.html" class="text-gray-800 font-medium hover:text-indigo-600">Kayıt Ol</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Create Project Header -->
+    <div class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">Projenizi Başlatın</h1>
+                <p class="text-xl">Hayalinizi gerçeğe dönüştürmek için ilk adımı atın.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Project Form -->
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-xl shadow-sm p-8">
+            <form class="space-y-8">
+                <!-- Project Basic Info -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Temel Bilgiler</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <label for="project-title" class="block text-sm font-medium text-gray-700 mb-1">Proje Başlığı</label>
+                            <input type="text" id="project-title" name="project-title" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Projenizin başlığını girin">
+                        </div>
+                        <div>
+                            <label for="project-category" class="block text-sm font-medium text-gray-700 mb-1">Kategori</label>
+                            <select id="project-category" name="project-category" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                                <option value="">Kategori Seçin</option>
+                                <option value="tech">Teknoloji</option>
+                                <option value="art">Sanat</option>
+                                <option value="sustainability">Sürdürülebilirlik</option>
+                                <option value="education">Eğitim</option>
+                                <option value="social">Sosyal Girişim</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="project-description" class="block text-sm font-medium text-gray-700 mb-1">Proje Açıklaması</label>
+                            <textarea id="project-description" name="project-description" rows="6" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Projenizi detaylı bir şekilde anlatın"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Media -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Proje Görselleri</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Kapak Görseli</label>
+                            <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg">
+                                <div class="space-y-1 text-center">
+                                    <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                                        <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <div class="flex text-sm text-gray-600">
+                                        <label for="cover-image" class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                            <span>Görsel Yükle</span>
+                                            <input id="cover-image" name="cover-image" type="file" class="sr-only">
+                                        </label>
+                                        <p class="pl-1">veya sürükleyip bırakın</p>
+                                    </div>
+                                    <p class="text-xs text-gray-500">PNG, JPG, GIF max 10MB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Proje Görselleri</label>
+                            <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg">
+                                <div class="space-y-1 text-center">
+                                    <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                                        <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <div class="flex text-sm text-gray-600">
+                                        <label for="project-images" class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                            <span>Görselleri Yükle</span>
+                                            <input id="project-images" name="project-images" type="file" multiple class="sr-only">
+                                        </label>
+                                        <p class="pl-1">veya sürükleyip bırakın</p>
+                                    </div>
+                                    <p class="text-xs text-gray-500">PNG, JPG, GIF max 10MB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Funding Details -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Fonlama Detayları</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <label for="funding-goal" class="block text-sm font-medium text-gray-700 mb-1">Hedef Fon Miktarı (₺)</label>
+                            <input type="number" id="funding-goal" name="funding-goal" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Örn: 50000">
+                        </div>
+                        <div>
+                            <label for="campaign-duration" class="block text-sm font-medium text-gray-700 mb-1">Kampanya Süresi (Gün)</label>
+                            <select id="campaign-duration" name="campaign-duration" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                                <option value="30">30 Gün</option>
+                                <option value="45">45 Gün</option>
+                                <option value="60">60 Gün</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rewards -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Destek Seçenekleri</h2>
+                    <div class="space-y-6">
+                        <div class="border rounded-lg p-6">
+                            <div class="space-y-4">
+                                <div>
+                                    <label for="reward-title" class="block text-sm font-medium text-gray-700 mb-1">Seçenek Başlığı</label>
+                                    <input type="text" id="reward-title" name="reward-title" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Örn: Erken Destekçi">
+                                </div>
+                                <div>
+                                    <label for="reward-amount" class="block text-sm font-medium text-gray-700 mb-1">Destek Miktarı (₺)</label>
+                                    <input type="number" id="reward-amount" name="reward-amount" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Örn: 1000">
+                                </div>
+                                <div>
+                                    <label for="reward-description" class="block text-sm font-medium text-gray-700 mb-1">Seçenek Açıklaması</label>
+                                    <textarea id="reward-description" name="reward-description" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Bu seçeneğin içeriğini detaylı bir şekilde açıklayın"></textarea>
+                                </div>
+                                <div>
+                                    <label for="reward-limit" class="block text-sm font-medium text-gray-700 mb-1">Sınırlı Sayı</label>
+                                    <input type="number" id="reward-limit" name="reward-limit" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Boş bırakırsanız sınırsız olacaktır">
+                                </div>
+                            </div>
+                            <button type="button" class="mt-4 text-indigo-600 hover:text-indigo-500">
+                                + Yeni Seçenek Ekle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="flex justify-end">
+                    <button type="submit" class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700">
+                        Projeyi Oluştur
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer (same as other pages) -->
+    <footer class="bg-gray-800 text-white py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">birprojemvar</h3>
+                    <p class="text-gray-400">Hayallerinizi gerçeğe dönüştürmenin en iyi yolu.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Keşfet</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Projeler</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Kategoriler</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Başarı Hikayeleri</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Hakkımızda</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">Biz Kimiz</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Kariyer</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">İletişim</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Bizi Takip Edin</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">X</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 birprojemvar.net Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>birprojemvar - Proje Platformu</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-indigo-600">birprojemvar</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="projects.html" class="text-gray-600 hover:text-indigo-600">Keşfet</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-indigo-600">Projeler</a>
+                    <a href="create-project.html" class="text-gray-600 hover:text-indigo-600">Başlat</a>
+                    <a href="login.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Giriş Yap</a>
+                    <a href="register.html" class="text-gray-800 font-medium hover:text-indigo-600">Kayıt Ol</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-white relative" style="background-image: url('anasayfa.png'); background-size: cover; background-position: center;">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Text Content -->
+                <div class="space-y-8">
+                    <h1 class="text-5xl font-bold text-gray-900 leading-tight">
+                        Yaratıcı projenizi<br>
+                        hayata geçirin
+                    </h1>
+                    <p class="text-xl text-gray-600">
+                        Hayallerinizi gerçeğe dönüştürmek için ihtiyacınız olan her şey burada. 
+                        Destekçilerinizle buluşun ve projenizi başlatın.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex -space-x-2">
+                        </div>
+                        <p class="text-gray-600">🚀🚀🚀 Şu ana kadar <span class="font-semibold text-indigo-600">1,234</span> proje başarıyla hayata geçti</p>
+                    </div>
+                </div>
+
+                <!-- Right Side - Project Creation Form -->
+                <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-6">Projenizi Başlatın</h2>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Proje Adı</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Projenizin adını girin">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Kategori</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                                <option>Teknoloji</option>
+                                <option>Sanat</option>
+                                <option>Sürdürülebilirlik</option>
+                                <option>Eğitim</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Hedef Bütçe</label>
+                            <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="₺">
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
+                            Projeyi Başlat
+                        </button>
+                    </form>
+                    <p class="mt-4 text-sm text-gray-500 text-center">
+                        Projenizi başlatmak için <a href="login.html" class="text-indigo-600 hover:text-indigo-700">giriş yapın</a> veya <a href="register.html" class="text-indigo-600 hover:text-indigo-700">kayıt olun</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Projects -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Öne Çıkan Projeler</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 group" onclick="window.location.href='project-detail.html'">
+                <div class="flex items-center justify-center h-48 bg-indigo-100">
+                    <span class="text-6xl">🏠</span>
+                </div>
+                <div class="p-6 relative">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Akıllı Ev Sistemi</h3>
+                    <p class="text-gray-600 mb-4">Yapay zeka destekli ev otomasyon sistemi ile evinizi kontrol edin.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-indigo-600 font-semibold">₺150,000</div>
+                        <div class="text-gray-500">Hedef: ₺200,000</div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-4">
+                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 75%"></div>
+                    </div>
+                    <!-- Ek Detaylar -->
+                    <div class="absolute left-0 right-0 bottom-0 px-6 py-4 bg-white bg-opacity-95 border-t border-gray-200 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 rounded-b-xl shadow-lg z-10">
+                        <div class="flex justify-between text-sm text-gray-700">
+                            <span class="font-medium">Kategori: Teknoloji</span>
+                            <span class="font-medium">Şehir: İstanbul</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 group" onclick="window.location.href='project-detail.html'">
+                <div class="flex items-center justify-center h-48 bg-green-100">
+                    <span class="text-6xl">🔋</span>
+                </div>
+                <div class="p-6 relative">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Sürdürülebilir Enerji</h3>
+                    <p class="text-gray-600 mb-4">Yenilenebilir enerji kaynakları için yeni nesil çözümler.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-indigo-600 font-semibold">₺250,000</div>
+                        <div class="text-gray-500">Hedef: ₺300,000</div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-4">
+                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 83%"></div>
+                    </div>
+                    <!-- Ek Detaylar -->
+                    <div class="absolute left-0 right-0 bottom-0 px-6 py-4 bg-white bg-opacity-95 border-t border-gray-200 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 rounded-b-xl shadow-lg z-10">
+                        <div class="flex justify-between text-sm text-gray-700">
+                            <span class="font-medium">Kategori: Enerji</span>
+                            <span class="font-medium">Şehir: Ankara</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 group" onclick="window.location.href='project-detail.html'">
+                <div class="flex items-center justify-center h-48 bg-yellow-100">
+                    <span class="text-6xl">📚</span>
+                </div>
+                <div class="p-6 relative">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Eğitim Platformu</h3>
+                    <p class="text-gray-600 mb-4">Online eğitim için yapay zeka destekli öğrenme platformu.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-indigo-600 font-semibold">₺180,000</div>
+                        <div class="text-gray-500">Hedef: ₺250,000</div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-4">
+                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 72%"></div>
+                    </div>
+                    <!-- Ek Detaylar -->
+                    <div class="absolute left-0 right-0 bottom-0 px-6 py-4 bg-white bg-opacity-95 border-t border-gray-200 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 rounded-b-xl shadow-lg z-10">
+                        <div class="flex justify-between text-sm text-gray-700">
+                            <span class="font-medium">Kategori: Eğitim</span>
+                            <span class="font-medium">Şehir: İzmir</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Kategoriler</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow cursor-pointer" onclick="window.location.href='projects.html'">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="font-semibold text-gray-800">Teknoloji</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow cursor-pointer" onclick="window.location.href='projects.html'">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="font-semibold text-gray-800">Sanat</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow cursor-pointer" onclick="window.location.href='projects.html'">
+                    <div class="text-4xl mb-4">🌱</div>
+                    <h3 class="font-semibold text-gray-800">Sürdürülebilirlik</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow cursor-pointer" onclick="window.location.href='projects.html'">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="font-semibold text-gray-800">Eğitim</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">birprojemvar</h3>
+                    <p class="text-gray-400">Hayallerinizi gerçeğe dönüştürmenin en iyi yolu.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Keşfet</h4>
+                    <ul class="space-y-2">
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Projeler</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Kategoriler</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">Başarı Hikayeleri</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Hakkımızda</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">Biz Kimiz</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">Kariyer</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">İletişim</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Bizi Takip Edin</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">X</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 birprojemvar.net Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akıllı Ev Sistemi - birprojemvar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar (same as other pages) -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-indigo-600">birprojemvar</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="projects.html" class="text-gray-600 hover:text-indigo-600">Keşfet</a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600">Projeler</a>
+                    <a href="create-project.html" class="text-gray-600 hover:text-indigo-600">Başlat</a>
+                    <a href="login.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Giriş Yap</a>
+                    <a href="register.html" class="text-gray-800 font-medium hover:text-indigo-600">Kayıt Ol</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <div class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <div class="flex items-center space-x-2 text-sm text-gray-600 mb-4">
+                <a href="projects.html" class="hover:text-indigo-600">Projeler</a>
+                <span>/</span>
+                <a href="#" class="hover:text-indigo-600">Teknoloji</a>
+                <span>/</span>
+                <span class="text-gray-800">Akıllı Ev Sistemi</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Akıllı Ev Sistemi</h1>
+            <div class="flex items-center space-x-4 text-sm text-gray-600">
+                <span>Proje Sahibi: Ahmet Yılmaz</span>
+                <span>•</span>
+                <span>23 gün kaldı</span>
+                <span>•</span>
+                <span>150 destekçi</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Project Content -->
+            <div class="lg:col-span-2">
+                <!-- Project Gallery -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden mb-8">
+                    <img src="https://via.placeholder.com/1200x600" alt="Proje Görseli" class="w-full h-96 object-cover">
+                    <div class="grid grid-cols-4 gap-2 p-4">
+                        <img src="https://via.placeholder.com/300x200" alt="Küçük Görsel" class="w-full h-20 object-cover rounded cursor-pointer">
+                        <img src="https://via.placeholder.com/300x200" alt="Küçük Görsel" class="w-full h-20 object-cover rounded cursor-pointer">
+                        <img src="https://via.placeholder.com/300x200" alt="Küçük Görsel" class="w-full h-20 object-cover rounded cursor-pointer">
+                        <img src="https://via.placeholder.com/300x200" alt="Küçük Görsel" class="w-full h-20 object-cover rounded cursor-pointer">
+                    </div>
+                </div>
+
+                <!-- Project Description -->
+                <div class="bg-white rounded-xl shadow-sm p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Proje Hakkında</h2>
+                    <div class="prose max-w-none">
+                        <p class="text-gray-600 mb-4">
+                            Akıllı Ev Sistemi, yapay zeka destekli ev otomasyon sistemi ile evinizi tamamen kontrol altına almanızı sağlar. 
+                            Sesli komutlar, mobil uygulama ve otomatik senaryolar ile evinizi daha akıllı hale getirin.
+                        </p>
+                        <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">Özellikler</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Yapay zeka destekli sesli asistan</li>
+                            <li>Mobil uygulama ile uzaktan kontrol</li>
+                            <li>Enerji tasarrufu optimizasyonu</li>
+                            <li>Güvenlik ve kamera sistemi entegrasyonu</li>
+                            <li>Akıllı aydınlatma ve ısıtma kontrolü</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Updates -->
+                <div class="bg-white rounded-xl shadow-sm p-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Proje Güncellemeleri</h2>
+                    <div class="space-y-6">
+                        <div class="border-b pb-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-semibold text-gray-900">Prototip Tamamlandı!</h3>
+                                <span class="text-sm text-gray-500">2 gün önce</span>
+                            </div>
+                            <p class="text-gray-600">
+                                İlk prototipimizi başarıyla tamamladık. Testler sonucunda sistemin tüm özellikleri beklentilerimizin üzerinde performans gösterdi.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-semibold text-gray-900">Üretim Süreci Başlıyor</h3>
+                                <span class="text-sm text-gray-500">1 hafta önce</span>
+                            </div>
+                            <p class="text-gray-600">
+                                Üretim tesisimizle anlaşma sağladık. İlk parti üretim için hazırlıklar başladı.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                <!-- Funding Card -->
+                <div class="bg-white rounded-xl shadow-sm p-6 mb-8 sticky top-8">
+                    <div class="mb-6">
+                        <div class="text-3xl font-bold text-gray-900 mb-2">₺150,000</div>
+                        <div class="text-gray-600">₺200,000 hedefinden</div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mt-4">
+                            <div class="progress-bar bg-indigo-600 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-600 mt-2">
+                            <span>%75 tamamlandı</span>
+                            <span>23 gün kaldı</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 mb-4">
+                        Projeyi Destekle
+                    </button>
+
+                    <div class="space-y-4">
+                        <h3 class="font-semibold text-gray-900">Destek Seçenekleri</h3>
+                        <div class="border rounded-lg p-4 hover:border-indigo-600 cursor-pointer">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Erken Destekçi</h4>
+                                    <p class="text-gray-600 text-sm">₺1,000</p>
+                                </div>
+                                <span class="text-sm text-gray-500">Sınırlı</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">• İlk parti ürün</p>
+                            <p class="text-gray-600 text-sm">• Özel destekçi rozeti</p>
+                        </div>
+
+                        <div class="border rounded-lg p-4 hover:border-indigo-600 cursor-pointer">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Standart Paket</h4>
+                                    <p class="text-gray-600 text-sm">₺2,500</p>
+                                </div>
+                                <span class="text-sm text-gray-500">Sınırsız</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">• Akıllı ev sistemi</p>
+                            <p class="text-gray-600 text-sm">• 1 yıl garanti</p>
+                            <p class="text-gray-600 text-sm">• Kurulum desteği</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creator Info -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="font-semibold text-gray-900 mb-4">Proje Sahibi</h3>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://via.placeholder.com/60" alt="Proje Sahibi" class="w-12 h-12 rounded-full">
+                        <div>
+                            <div class="font-semibold text-gray-900">Ahmet Yılmaz</div>
+                            <div class="text-sm text-gray-600">3 başarılı proje</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (same as other pages) -->
+    <footer class="bg-gray-800 text-white py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">birprojemvar</h3>
+                    <p class="text-gray-400">Hayallerinizi gerçeğe dönüştürmenin en iyi yolu.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Keşfet</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Projeler</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Kategoriler</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Başarı Hikayeleri</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Hakkımızda</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">Biz Kimiz</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Kariyer</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">İletişim</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Bizi Takip Edin</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">X</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 birprojemvar.net Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
